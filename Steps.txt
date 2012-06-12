@@ -1,0 +1,6 @@
+1.	Add the FocusedRowGridEditor to the Module.Web Project
+2.	AssiginFocusedRowGridEditor to the  ListView's EditorType
+3.	Create the SplitterLayoutManager in the Module.Web Project
+4.	Override the WebApplication.CreateLayoutManagerCore in the web project
+5.	Override the WebApplication.SupportsMasterDetailMode in the web project
+6.	Modify MoveFooter.js to resize the splitter propertly

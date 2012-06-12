@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="WebSplitLayout" Logo="ExpressAppLogo">
+  <NavigationItems StartupNavigationItem="MyPerson_ListView">
+    <Items>
+      <Item Id="Default">
+        <Items>
+          <Item Id="@05f3a2b5-4411-41d7-af9c-05c5941240aa" ViewId="ActionContainerDashboardOrganizationItem_DetailView" IsNewNode="True" />
+          <Item Id="@0bc72103-9d94-4f80-81d8-38156bf2c9f1" ViewId="ChangePasswordParameters_DetailView" IsNewNode="True" />
+          <Item Id="@1467e807-ff87-4161-8bc9-ba7f8f4db5fc" ViewId="AboutInfo_DetailView" IsNewNode="True" />
+          <Item Id="@3a4ffad7-e6cd-4514-a1f3-278907a6bfc8" ViewId="ActionContainerDescriptor_DetailView" IsNewNode="True" />
+          <Item Id="@7473961e-9e10-4077-b16a-9ddffea2c13e" ViewId="ActionContainerDescriptor_DetailView" IsNewNode="True" />
+          <Item Id="@8607ba58-5377-46dd-8a50-2bacc33d642a" ViewId="AboutInfo_DetailView" IsNewNode="True" />
+          <Item Id="@8cfe18bf-bdb0-4da2-9262-4f7a8ebee676" ViewId="ObjectAccessPermission_DetailView" IsNewNode="True" />
+          <Item Id="@adc0ea80-a34b-49ea-aca9-83d3e9aac3ea" ViewId="ChangePasswordOnLogonParameters_LookupListView" IsNewNode="True" />
+          <Item Id="@bf8801d1-c80f-47c3-9e58-b7dbaea58c09" ViewId="ActionContainerDescriptor_DetailView" IsNewNode="True" />
+          <Item Id="@c481ff01-e855-4814-ba44-0bbf21aa616c" ViewId="ActionContainerDescriptor_ListView" IsNewNode="True" />
+          <Item Id="@d1b37613-5949-44f4-90ec-ac388a8a52a4" ViewId="PersistentBase_ListView" IsNewNode="True" />
+          <Item Id="@eeb9ccae-9be9-48c8-bf46-6c8eda833b27" ViewId="AboutInfo_DetailView" IsNewNode="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="11.2.11.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <ListView Id="MyPerson_ListView" MasterDetailMode="ListViewAndDetailView">
+      <Filters>
+        <Filter Id="@2c0da9d7-61b2-4cbc-a378-72bc8717f377" Caption="B-Persons" Criteria="StartsWith([FirstName], 'B')" IsNewNode="True" />
+        <Filter Id="@a25187ce-f30b-470c-b1d7-438cefacbdf1" Caption="All Persons" IsNewNode="True" />
+      </Filters>
+      <SplitLayout Direction="Vertical" />
+    </ListView>
+  </Views>
+</Application>

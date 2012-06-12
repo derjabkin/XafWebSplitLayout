@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="11.2.11.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <ListView Id="MyPerson_ListView" EditorTypeName="WebSplitLayout.Module.Web.FocusedRowGridEditor" />
+  </Views>
+</Application>
