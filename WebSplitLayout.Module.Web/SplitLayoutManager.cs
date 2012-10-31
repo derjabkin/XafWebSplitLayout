@@ -45,11 +45,6 @@ namespace WebSplitLayout.Module.Web
                 listPane.Controls.Add(listControl);
                 splitter.ClientSideEvents.Init = "function (s,e) {s.AdjustControl(); s.GetMainElement().ClientControl = s; document.getElementById('CP').style.height='0px';AdjustSize();}";
 
-                XafCallbackManager callbackManager = ((ICallbackManagerHolder)WebWindow.CurrentRequestPage).CallbackManager;
-                var positionController = WebWindow.CurrentRequestWindow.GetController<SplitterPositionController>();
-                callbackManager.RegisterHandler("SplitterPositionController", positionController);
-                var callbackScript = callbackManager.GetScript("SplitterPositionController", "'testresize'");
-
                 splitter.ShowCollapseBackwardButton = true;
                 splitter.ShowCollapseForwardButton = true;
 

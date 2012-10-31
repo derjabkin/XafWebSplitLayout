@@ -70,11 +70,11 @@ function AdjustSize() {
     var footer = document.getElementById("Footer");
     var newHeight = windowHeight - mainTableHeight - 20;
     var elementToResize = document.getElementById("MasterDetailSplitter");
-    var footerTable = footer.getElementsByTagName("table")[0];
+    var footerTableHeight = footer != null ? footer.getElementsByTagName("table")[0].offsetHeight : 0;
 
-
-    var middleRowHeight = windowHeight - mainTableHeight + footerTable.offsetHeight + middleRowParent.offsetHeight - getHeight("UPVH") - 
+    var middleRowHeight = windowHeight - mainTableHeight + footerTableHeight + middleRowParent.offsetHeight - getHeight("UPVH") -
         getHeight("TB_Menu") - getParentTagHeight("UPQC", "td");
+
     if (elementToResize) {
         var controlToResize = elementToResize.ClientControl;
         if (controlToResize) {
